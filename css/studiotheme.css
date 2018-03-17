@@ -6,7 +6,10 @@
   padding:10px;
 }
 .bigtext {
-  font-size: 32;
+  font-size: 30;
+}
+.midtext {
+  font-size: 20;
 }
 
 .underlinelink {
