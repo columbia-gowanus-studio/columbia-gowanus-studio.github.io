@@ -1,0 +1,47 @@
+.container{
+  padding:10px;
+}
+.bigtext {
+  font-family: 'Muli', sans-serif;
+  font-size: 32;
+}
+
+.underlinelink {
+  color: black;
+  font-family: 'Muli', sans-serif;
+}
+
+.nav-li {
+  padding:.5em;
+}
+.underlinelink:hover {
+  color: black;
+  background-color: yellow;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 120px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+
+}
+
+.gsapplogo {
+  width: 100px;
+  height: auto;
+}
+
+ul {
+  list-style-type: none;
+}
+@media only screen and (max-width:575px){
+ .gsapplogo {
+  width: 80px;
+  }
+  .footer{
+    position: relative;
+    height:90px;
+  }
+}
