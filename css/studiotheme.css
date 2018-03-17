@@ -1,14 +1,17 @@
+.designatedfont {
+  font-family: 'Nunito Sans', sans-serif;
+  letter-spacing: 0.03em;
+}
 .container{
   padding:10px;
 }
 .bigtext {
-  font-family: 'Muli', sans-serif;
   font-size: 32;
 }
 
 .underlinelink {
   color: black;
-  font-family: 'Muli', sans-serif;
+  /* font-family: 'Muli', sans-serif; */
 }
 
 .nav-li {
