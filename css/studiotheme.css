@@ -11,7 +11,9 @@
 .midtext {
   font-size: 20;
 }
-
+.liltext{
+  font-size: 10;
+}
 .underlinelink {
   color: black;
 }
