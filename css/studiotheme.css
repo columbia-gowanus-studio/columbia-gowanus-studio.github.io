@@ -55,3 +55,21 @@ ul {
     font-size: 20;
   }
 }
+/* Platform CSS starts here */
+
+.headingTitle {
+  font-size: 18px;
+  font-weight: 800;
+}
+.outlinebox{
+  outline: 2px solid black;
+  outline-offset: -3px;
+}
+.borderbox {
+  border: 2px solid black;
+  margin: 2px;
+}
+
+.table-text{
+  font-size: 14px;
+}
