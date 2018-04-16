@@ -4,6 +4,7 @@
 	<title>GeoreferencedWebmaps</title>
 
 	<link rel="stylesheet"  href="css/leaflet.css"/>
+  <link rel="stylesheet"  href="css/leaflet-extras.css"/>
 
 	<script src="js/leaflet.js"></script>
 
@@ -60,6 +61,41 @@
 // 	    }
 // 	}
 //
+var dotIconorig = L.icon({
+    iconUrl: 'img/marker-01.png',
+    // shadowUrl: 'leaf-shadow.png',
+
+    iconSize:     [10, 10], // size of the icon
+    // shadowSize:   [50, 64], // size of the shadow
+    // iconAnchor:   [20, 20], // point of the icon which will correspond to marker's location
+    // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var dotIcon = L.Icon.extend({
+    // iconUrl: 'marker-01.png',
+    // shadowUrl: 'leaf-shadow.png',
+
+    iconSize:     [1, 1], // size of the icon
+    // shadowSize:   [50, 64], // size of the shadow
+    // iconAnchor:   [20, 20], // point of the icon which will correspond to marker's location
+    // shadowAnchor: [4, 62],  // the same for the shadow
+    popupAnchor:  [-3, -76] // point from which the popup should open relative to the iconAnchor
+});
+
+var dotIconM = new dotIcon({iconUrl: 'img/marker-01.png'}),
+    dotIconY = new dotIcon({iconUrl: 'img/marker-02.png'}),
+    dotIconK = new dotIcon({iconUrl: 'img/marker-03.png'}),
+    dotIconC = new dotIcon({iconUrl: 'img/marker-04.png'});
+
+
+L.marker([40.678871,-73.982813], {icon: dotIconorig}).addTo(map);
+L.marker([40.681412, -73.989229], {icon: dotIconorig}).addTo(map);
+L.marker([40.677115, -73.992362], {icon: dotIconorig}).addTo(map);
+L.marker([40.672492, -73.990130], {icon: dotIconorig}).addTo(map);
+L.marker([40.680537, -73.983187], {icon: dotIconorig}).addTo(map);
+
+
 //load GeoJSON file containing points
 	$.getJSON('data/PointAnnotations.geojson',function(bldg){
 		L.geoJson(bldg,{
