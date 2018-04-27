@@ -60,10 +60,16 @@ ul {
 .headingTitle {
   font-size: 18px;
   font-weight: 800;
+  vertical-align: middle;
+}
+.headingSubtitle {
+  font-size: 12px;
+  font-weight: 400;
 }
 .outlinebox{
   outline: 2px solid black;
   outline-offset: -3px;
+
 }
 .borderbox {
   border: 2px solid black;
