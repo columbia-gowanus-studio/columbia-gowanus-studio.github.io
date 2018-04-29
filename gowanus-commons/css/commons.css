@@ -64,16 +64,34 @@ ul {
 }
 .headingSubtitle {
   font-size: 12px;
+  font-weight: 800;
+}
+.sectionTitle{
+  font-size: 15px;
+  font-weight: 800;
+}
+.footer-text{
+  font-size: 9px;
+}
+.entry-text{
   font-weight: 400;
+  font-size: 12px;
 }
 .outlinebox{
   outline: 2px solid black;
   outline-offset: -3px;
+  padding:6px;
 
 }
 .borderbox {
   border: 2px solid black;
   margin: 2px;
+}
+.currentbox{
+  outline: 2px solid black;
+  outline-offset: -3px;
+  padding:6px;
+  background-color: yellow;
 }
 
 .table-text{
@@ -81,9 +99,38 @@ ul {
 }
 
 .img-grid{
-  padding 100px;
-
+  padding-top: 10px;
 }
+
+.boldlink{
+  color: black;
+}
+
+.linkfont{
+  color: black;
+  text-decoration: none;
+}
+
+.linkfont:hover{
+  color:black;
+}
+
+.linkbox{
+  outline: 2px solid black;
+  outline-offset: -3px;
+  padding:6px;
+}
+.linkbox:hover {
+  outline: 2px solid black;
+  background-color: yellow;
+  color: black;
+}
+
+.img-box{
+  padding-right:5px;
+  padding-left:5px;
+}
+
 /* carousel */
 body{padding-top:20px;}
 .carousel {
